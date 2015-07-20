@@ -11,6 +11,9 @@ Microsoft Azure's HDInsight team recently released a preview of a hosted version
 
 We used two Ströer Hamburg city level datasets for this analysis: 1) Frame locations (where physical display ads exist) and 2) motion traces of a very large set of anonymous people. The first processing step on this data was to map all of the frames locations into geographical buckets. This reduces the two dimensional space to a one dimensional geokey that uniquely identifies a particular square geographic region, which makes it much easier to process at scale with Spark's programming model. For this application, we chose geographic regions of 50m on a side to match up with the visual distance that these ads are visible from.
 
+![Day Hour Density](dayhour.png)
+Figure 1: Geobucketed motion density for Mondays at 10am
+
 We also mapped all of the human motion data to these geokeys. In doing so, we also preserved geokey visit sequences such that we maintained linkage tuples between the geokeys such that we can discover correlations between them. We joined the frame geokeyed data against the motion geokeyed data to come up with impressions for each of the ad frames:
 
 Finally, we used the linkage tuples to also discover highly linked ad frames:
