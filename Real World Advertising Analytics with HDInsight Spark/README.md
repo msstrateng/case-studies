@@ -1,5 +1,5 @@
 ## Real World Advertising Analytics with HDInsight Spark
-##### Tim Park, Partner Catalyst Team, Microsoft
+##### Tim Park, Microsoft
 
 One of the biggest challenges of the real world display advertising business is quantifying its impact. Unlike online advertising, with direct measurements like impressions and click thru rates, there are no easy direct measurement techniques for real world advertising. We recently partnered with Ströer, one of the largest display advertisers in Europe, to combine two of their datasets in conjunction with our preview HDInsight Spark data platform into insights around total ad impressions and linkages between their ad frames. 
 
